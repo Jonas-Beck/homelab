@@ -8,7 +8,7 @@ spec:
   resources:
     requests:
       storage: 512Mi
-  storageClassName: microk8s-hostpath
+  storageClassName: local-path
 ---
 apiVersion: v1
 kind: PersistentVolume
