@@ -4,6 +4,7 @@ metadata:
   name: home-assistant
 namespace: home-automation
 resources:
+  - deployment.yaml
   - namespace.yaml
-  - repository.yaml
-  - release.yaml
+  - pvc.yaml
+  - service.yaml
