@@ -1,0 +1,30 @@
+amends "package://github.com/jdx/hk/releases/download/v1.28.0/hk@1.28.0#/Config.pkl"
+import "package://github.com/jdx/hk/releases/download/v1.28.0/hk@1.28.0#/Builtins.pkl"
+
+local linters = new Mapping<String, Step> {
+  // uses builtin prettier linter config
+  ["actionlint"] = Builtins.actionlint
+  ["mise"] = Builtins.mise
+  ["pkl"] = Builtins.pkl
+
+  ["kubeconform"] {
+    glob = "*.yaml"
+    check = "./scripts/validate.sh"
+  }
+}
+
+hooks {
+  ["pre-commit"] {
+    fix = true
+    steps = linters
+  }
+  ["pre-push"] {
+    steps = linters
+  }
+  ["fix"] {
+    steps = linters
+  }
+  ["check"] {
+    steps = linters
+  }
+}

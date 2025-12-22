@@ -4,6 +4,8 @@ kubectl = "1.35.0"
 kustomize = "5.7.0"
 yq = "4.48.1"
 kubeconform = "0.7.0"
+pkl = "latest"
+hk = "latest"
 
 [settings]
 lockfile = true

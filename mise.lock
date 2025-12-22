@@ -7,6 +7,11 @@ backend = "aqua:fluxcd/flux2"
 "platforms.macos-x64" = { checksum = "sha256:011a4b92987454f9583337bff131ea05602f7e6b2ede0d8eb080bcd440ea67cc", url = "https://github.com/fluxcd/flux2/releases/download/v2.7.3/flux_2.7.3_darwin_amd64.tar.gz"}
 "platforms.windows-x64" = { checksum = "sha256:fb11ee98527652fbb17cf072045b725dc16345968dcb76bc5150f0b53223a305", url = "https://github.com/fluxcd/flux2/releases/download/v2.7.3/flux_2.7.3_windows_amd64.zip"}
 
+[[tools.hk]]
+version = "1.28.0"
+backend = "aqua:jdx/hk"
+"platforms.macos-arm64" = { checksum = "sha256:7b0ad12e5b6efa4ca55feec2e90ef5eb166f50293d109805d4938f708713e784", url = "https://github.com/jdx/hk/releases/download/v1.28.0/hk-aarch64-apple-darwin.tar.gz"}
+
 [[tools.kubeconform]]
 version = "0.7.0"
 backend = "aqua:yannh/kubeconform"
@@ -33,6 +38,11 @@ backend = "aqua:kubernetes-sigs/kustomize"
 "platforms.macos-arm64" = { checksum = "sha256:c0dac68dc7870e1f673ae4d8fb554df971e0b9b9f0affc4be4c0852f62d0796e", url = "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v5.7.0/kustomize_v5.7.0_darwin_arm64.tar.gz"}
 "platforms.macos-x64" = { checksum = "sha256:277a7401f969ce3945e8f0ff8b0cce6f4353854db1ff89ba070001e3246e7f22", url = "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v5.7.0/kustomize_v5.7.0_darwin_amd64.tar.gz"}
 "platforms.windows-x64" = { checksum = "sha256:eacee576f22e8c0cb1ff2840ec6496aa42346d5a23936fed9899f7019ed2af62", url = "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v5.7.0/kustomize_v5.7.0_windows_amd64.zip"}
+
+[[tools.pkl]]
+version = "0.30.2"
+backend = "aqua:apple/pkl"
+"platforms.macos-arm64" = { checksum = "sha256:f1db44c0f6f859aee88c9d7d272f2371ae40ac95ec9957ae78eff51665158e04", url = "https://github.com/apple/pkl/releases/download/0.30.2/pkl-macos-aarch64"}
 
 [[tools.yq]]
 version = "4.48.1"
