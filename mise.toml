@@ -1,0 +1,9 @@
+[tools]
+flux2 = "2.7.3"
+kubectl = "1.35.0"
+kustomize = "5.7.0"
+yq = "4.48.1"
+kubeconform = "0.7.0"
+
+[settings]
+lockfile = true

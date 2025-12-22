@@ -1,0 +1,44 @@
+[[tools.flux2]]
+version = "2.7.3"
+backend = "aqua:fluxcd/flux2"
+"platforms.linux-arm64" = { checksum = "sha256:94ba085fa72e6ce5798ae02927dd2f1ea087f8f6fd910888693bcd905938ba14", url = "https://github.com/fluxcd/flux2/releases/download/v2.7.3/flux_2.7.3_linux_arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:8882b5d1f37815a99ae92deb045ea052529c627a2ddbda59382cdfa075511132", url = "https://github.com/fluxcd/flux2/releases/download/v2.7.3/flux_2.7.3_linux_amd64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:e96efce3e2ee0651ef516295c976112b4df4dd51410d5789cb665115fbfabde7", url = "https://github.com/fluxcd/flux2/releases/download/v2.7.3/flux_2.7.3_darwin_arm64.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:011a4b92987454f9583337bff131ea05602f7e6b2ede0d8eb080bcd440ea67cc", url = "https://github.com/fluxcd/flux2/releases/download/v2.7.3/flux_2.7.3_darwin_amd64.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:fb11ee98527652fbb17cf072045b725dc16345968dcb76bc5150f0b53223a305", url = "https://github.com/fluxcd/flux2/releases/download/v2.7.3/flux_2.7.3_windows_amd64.zip"}
+
+[[tools.kubeconform]]
+version = "0.7.0"
+backend = "aqua:yannh/kubeconform"
+"platforms.linux-arm64" = { checksum = "sha256:cc907ccf9e3c34523f0f32b69745265e0a6908ca85b92f41931d4537860eb83c", url = "https://github.com/yannh/kubeconform/releases/download/v0.7.0/kubeconform-linux-arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:c31518ddd122663b3f3aa874cfe8178cb0988de944f29c74a0b9260920d115d3", url = "https://github.com/yannh/kubeconform/releases/download/v0.7.0/kubeconform-linux-amd64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:b5d32b2cb77f9c781c976b20a85e2d0bc8f9184d5d1cfe665a2f31a19f99eeb9", url = "https://github.com/yannh/kubeconform/releases/download/v0.7.0/kubeconform-darwin-arm64.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:c6771cc894d82e1b12f35ee797dcda1f7da6a3787aa30902a15c264056dd40d4", url = "https://github.com/yannh/kubeconform/releases/download/v0.7.0/kubeconform-darwin-amd64.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:9cb75551d81c909c2241ab383ced2be68363b5bfb15fd989badcc5a63bea5d7e", url = "https://github.com/yannh/kubeconform/releases/download/v0.7.0/kubeconform-windows-amd64.zip"}
+
+[[tools.kubectl]]
+version = "1.35.0"
+backend = "aqua:kubernetes/kubectl"
+"platforms.linux-arm64" = { checksum = "sha256:58f82f9fe796c375c5c4b8439850b0f3f4d401a52434052f2df46035a8789e25", url = "https://dl.k8s.io/v1.35.0/bin/linux/arm64/kubectl"}
+"platforms.linux-x64" = { checksum = "sha256:a2e984a18a0c063279d692533031c1eff93a262afcc0afdc517375432d060989", url = "https://dl.k8s.io/v1.35.0/bin/linux/amd64/kubectl"}
+"platforms.macos-arm64" = { checksum = "sha256:cf699c56340dc775230fde4ef84237d27563ea6ef52164c7d078072b586c3918", url = "https://dl.k8s.io/v1.35.0/bin/darwin/arm64/kubectl"}
+"platforms.macos-x64" = { checksum = "sha256:2447cb78911b10a667202b078eeb30541ec78d1280c3682921dc81607e148d96", url = "https://dl.k8s.io/v1.35.0/bin/darwin/amd64/kubectl"}
+"platforms.windows-x64" = { checksum = "sha256:4c5d14b8673bd55f813a8965ad70d5150e3960ee5f274025e2286aea3a0fa8b6", url = "https://dl.k8s.io/v1.35.0/bin/windows/amd64/kubectl.exe"}
+
+[[tools.kustomize]]
+version = "5.7.0"
+backend = "aqua:kubernetes-sigs/kustomize"
+"platforms.linux-arm64" = { checksum = "sha256:744bb1bc1854b6634dea9eaf6db2f401a734ed25d6837baa6f91157d79c27d5e", url = "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v5.7.0/kustomize_v5.7.0_linux_arm64.tar.gz"}
+"platforms.linux-x64" = { checksum = "sha256:0d98f06d6d2c2c0ff8923cc136a517af74aaa187f1b9f3e17ff370d0625ede84", url = "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v5.7.0/kustomize_v5.7.0_linux_amd64.tar.gz"}
+"platforms.macos-arm64" = { checksum = "sha256:c0dac68dc7870e1f673ae4d8fb554df971e0b9b9f0affc4be4c0852f62d0796e", url = "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v5.7.0/kustomize_v5.7.0_darwin_arm64.tar.gz"}
+"platforms.macos-x64" = { checksum = "sha256:277a7401f969ce3945e8f0ff8b0cce6f4353854db1ff89ba070001e3246e7f22", url = "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v5.7.0/kustomize_v5.7.0_darwin_amd64.tar.gz"}
+"platforms.windows-x64" = { checksum = "sha256:eacee576f22e8c0cb1ff2840ec6496aa42346d5a23936fed9899f7019ed2af62", url = "https://github.com/kubernetes-sigs/kustomize/releases/download/kustomize/v5.7.0/kustomize_v5.7.0_windows_amd64.zip"}
+
+[[tools.yq]]
+version = "4.48.1"
+backend = "aqua:mikefarah/yq"
+"platforms.linux-arm64" = { checksum = "sha256:0e46b5b926a9e57c526fa2bd8f8e38b7e17fbf6e2403ff1741f3b268e3363a9e", url = "https://github.com/mikefarah/yq/releases/download/v4.48.1/yq_linux_arm64"}
+"platforms.linux-x64" = { checksum = "sha256:99df6047f5b577a9d25f969f7c3823ada3488de2e2115b30a0abb10d9324fd9f", url = "https://github.com/mikefarah/yq/releases/download/v4.48.1/yq_linux_amd64"}
+"platforms.macos-arm64" = { checksum = "sha256:05e19db817704d945f28f73763cc2b3c5142ef114a991f57b83bd034c2b86646", url = "https://github.com/mikefarah/yq/releases/download/v4.48.1/yq_darwin_arm64"}
+"platforms.macos-x64" = { checksum = "sha256:c93d5e5880c78e22aec4efc1d719751b60f9adc49b2735a8009916581b8457c2", url = "https://github.com/mikefarah/yq/releases/download/v4.48.1/yq_darwin_amd64"}
+"platforms.windows-x64" = { checksum = "sha256:38ae580c6fc7f733cdbade2e32525107468cba7bbdfdb59fe49561d088ffc117", url = "https://github.com/mikefarah/yq/releases/download/v4.48.1/yq_windows_amd64.exe"}
