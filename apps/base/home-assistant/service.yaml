@@ -10,7 +10,7 @@ spec:
   ports:
     - port: 8123
       targetPort: 8123
-      nodePort: 30812 # Optional: pick a specific port, otherwise K8s assigns one
+      nodePort: 30812
       name: http
   selector:
     app: home-assistant

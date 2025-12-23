@@ -6,6 +6,7 @@ local linters = new Mapping<String, Step> {
   ["actionlint"] = Builtins.actionlint
   ["mise"] = Builtins.mise
   ["pkl"] = Builtins.pkl
+  ["yamllint"] = Builtins.yamllint
 
   ["kubeconform"] {
     glob = "*.yaml"
