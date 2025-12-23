@@ -9,3 +9,6 @@ hk = "latest"
 
 [settings]
 lockfile = true
+
+[hooks]
+postinstall = "hk install --mise"
