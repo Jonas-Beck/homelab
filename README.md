@@ -23,7 +23,6 @@ The infrastructure directory is organized into:
 
 Each cluster has its own directory under **clusters/**, containing:
 
-- **artifacts.yaml** – Defines an ArtifactGenerator that splits the monorepo into infrastructure and apps artifacts
 - **infrastructure.yaml** – Flux Kustomization definitions for reconciling infrastructure controllers and configs
 - **flux-system/flux-instance.yaml** – FluxInstance custom resource used to manage all Flux components
 - **apps.yaml** – Flux Kustomization definitions for reconciling the app overlays for that specific cluster
