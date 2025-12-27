@@ -22,8 +22,10 @@ kustomize_flags=("--load-restrictor=LoadRestrictionsNone")
 kustomize_config="kustomization.yaml"
 
 # skip Kubernetes Secrets due to SOPS fields failing validation
-kubeconform_flags=("-skip=Secret")
-kubeconform_config=("-strict" "-ignore-missing-schemas" "-schema-location" "default" "-schema-location" "/tmp/flux-crd-schemas" "-verbose")
+# Also skip Kustomization due to isses with overlap between kustomize and flux kustomise
+# All kustomize files are validated using kustomize build and then kubeconform after as well
+kubeconform_flags=("-skip=Secret,Kustomization")
+kubeconform_config=("-strict" "-schema-location" "default" "-schema-location" "/tmp/flux-crd-schemas" "-schema-location" "https://raw.githubusercontent.com/datreeio/CRDs-catalog/main/{{.Group}}/{{.ResourceKind}}_{{.ResourceAPIVersion}}.json" "-verbose")
 
 echo "INFO - Downloading Flux OpenAPI schemas"
 mkdir -p /tmp/flux-crd-schemas/master-standalone-strict
