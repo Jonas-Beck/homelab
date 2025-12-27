@@ -16,3 +16,19 @@ lockfile = true
 
 [hooks]
 postinstall = "hk install --mise"
+
+[tasks.pre-commit]
+description = 'Run pre-commit hook'
+run = "hk run pre-commit"
+
+[tasks.pre-push]
+description = 'Run pre-push hook'
+run = "hk run pre-push"
+
+[tasks.check]
+description = 'Check current code using linters and formatters'
+run = "hk check"
+
+[tasks.fix]
+description = 'Fix current code using linters and formatters'
+run = "hk fix"
