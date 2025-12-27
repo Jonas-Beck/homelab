@@ -8,6 +8,8 @@ pkl = "0.30.2"
 hk = "1.28.0"
 pipx = "latest"
 yamllint = "latest"
+shellcheck = "latest"
+shfmt = "latest"
 
 [settings]
 lockfile = true
