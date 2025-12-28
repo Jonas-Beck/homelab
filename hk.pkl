@@ -2,7 +2,6 @@ amends "package://github.com/jdx/hk/releases/download/v1.28.0/hk@1.28.0#/Config.
 import "package://github.com/jdx/hk/releases/download/v1.28.0/hk@1.28.0#/Builtins.pkl"
 
 local linters = new Mapping<String, Step> {
-  // uses builtin prettier linter config
   ["actionlint"] = Builtins.actionlint
   ["mise"] = Builtins.mise
   ["pkl"] = Builtins.pkl
@@ -11,8 +10,14 @@ local linters = new Mapping<String, Step> {
   ["shellcheck"] = Builtins.shellcheck
 
   ["kubeconform"] {
-    glob = "*.yaml"
-    check = "mise run kubeconform"
+    // Only validate ./clusters/ due to ./apps/ containing HelmReleases
+    // with missing properties since they are used for patching
+    glob = "clusters/*.yaml"
+    check = "mise kubeconform:run {{ files }}"
+  }
+
+  ["kustomize"] {
+    check = "mise kubeconform:kustomize"
   }
 }
 
