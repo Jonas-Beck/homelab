@@ -4,3 +4,4 @@ metadata:
   name: controllers
 resources:
   - flux-operator.yaml
+  - kube-prometheus-stack.yaml
