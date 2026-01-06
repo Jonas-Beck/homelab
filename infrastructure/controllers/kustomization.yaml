@@ -5,3 +5,4 @@ metadata:
 resources:
   - flux-operator.yaml
   - kube-prometheus-stack.yaml
+  - kyverno.yaml
