@@ -8,4 +8,3 @@ resources:
   - namespace.yaml
   - pvc.yaml
   - service.yaml
-  - avahi.yaml
