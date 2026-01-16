@@ -6,3 +6,4 @@ resources:
   - flux-operator.yaml
   - kube-prometheus-stack.yaml
   - kyverno.yaml
+  - cert-manager.yaml
