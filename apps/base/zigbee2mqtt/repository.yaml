@@ -1,0 +1,8 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: zigbee2mqtt
+  namespace: home-automation
+spec:
+  interval: 5m
+  url: https://charts.zigbee2mqtt.io

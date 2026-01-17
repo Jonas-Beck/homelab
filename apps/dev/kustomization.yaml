@@ -5,6 +5,7 @@ metadata:
 resources:
   - ../base/podinfo
   - ../base/home-assistant
+  - ../base/zigbee2mqtt
   - ../base/mosquitto
 patches:
   - path: podinfo-values.yaml
